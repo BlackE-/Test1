@@ -1,0 +1,6 @@
+<div class="show1">
+	<p><%=@profession.name%></p>
+	<%@profession.services.each do|service|%>
+	<p><%=service.name %></p>
+	<%end%>
+</div>

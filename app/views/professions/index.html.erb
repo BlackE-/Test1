@@ -1,0 +1,5 @@
+<div class="pro_1">
+	<% @professions.each do |profession|%>
+	<p><%=link_to profession.name, profession_path(profession)%></p>
+	<%end %>
+</div>
