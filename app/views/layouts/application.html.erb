@@ -7,8 +7,24 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<header>
+<h1>Test1</h1>
+<a href="/">Home</a>	<!--Siempre a root-->
+<%=a="Hola Mundo"%>			<!---->
+<%a="Hola Mundo 2"%>		<!---->
+<%=a %> 					<!---->
+<br/>
+<!---->
+<%=link_to "Home2", root_path %>
+<br/>
+<%=link_to "Professions", :controller => "professions",:action => "index" %>
+
+</header>
 
 <%= yield %>
 
+<footer>
+	<p>end</p>
+</footer>
 </body>
 </html>
